@@ -1,0 +1,30 @@
+{
+  "connection": "default",
+  "collectionName": "menus",
+  "info": {
+    "name": "menu",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "unique": true,
+      "type": "string"
+    },
+    "link_to": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer",
+      "default": "0"
+    },
+    "enabled": {
+      "default": true,
+      "type": "boolean"
+    }
+  }
+}

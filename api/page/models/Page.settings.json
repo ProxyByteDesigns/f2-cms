@@ -1,0 +1,26 @@
+{
+  "connection": "default",
+  "collectionName": "pages",
+  "info": {
+    "name": "page",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "body": {
+      "required": true,
+      "type": "text"
+    },
+    "permalink": {
+      "unique": true,
+      "type": "string"
+    }
+  }
+}
