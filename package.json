@@ -9,7 +9,11 @@
     "start": "node server.js",
     "strapi": "node_modules/strapi/bin/strapi.js",
     "lint": "node_modules/.bin/eslint api/**/*.js config/**/*.js plugins/**/*.js",
-    "postinstall": "node node_modules/strapi/lib/utils/post-install.js"
+    "postinstall": "node node_modules/strapi/lib/utils/post-install.js",
+    "server-start": "pm2 start ecosystem.config.js --env production",
+    "server-reload": "pm2 reload ecosystem.config.js --update-env",
+    "yarn-install": "yarn install",
+    "deploy": "npm-run-all yarn-install server-reload"
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
