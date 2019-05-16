@@ -84,6 +84,8 @@ public/uploads/*
 !public/uploads/.gitkeep
 plugins/*
 
+ecosystem.config.js
+
 ############################
 # Node.js
 ############################
