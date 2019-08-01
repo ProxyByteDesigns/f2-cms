@@ -25,6 +25,9 @@
     "enabled": {
       "default": true,
       "type": "boolean"
+    },
+    "openInNewTab": {
+      "type": "boolean"
     }
   }
 }
